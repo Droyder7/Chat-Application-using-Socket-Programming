@@ -46,7 +46,7 @@ printf("\nPort is set to : %d\n", portno);
     if (connect(sockfd,(struct sockaddr *)&serv_addr,sizeof(serv_addr)) < 0) 
         error("\nERROR connecting, Sever may not be active");
     else
-        printf("\nConnected to the Server\nn");
+        printf("\nConnected to the Server\n");
 
     while(1)
       {

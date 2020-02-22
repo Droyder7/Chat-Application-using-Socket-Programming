@@ -16,7 +16,7 @@ void error(char *msg)
 
 int main(int argc, char *argv[])
 {
-   int serv_sock, cli_sock, port, cli_len, n, pid;     // Decalring Variables
+   int serv_sock, cli_sock, port, cli_len, n;     // Decalring Variables
      
    struct sockaddr_in serv_addr, cli_addr;   // Declaring server, client socket addresses
 
