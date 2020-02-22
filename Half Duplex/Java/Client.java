@@ -9,15 +9,16 @@ public class Client {
 
         System.out.println("Welcome to the Chat Application\nYou are the Client");
 
-        if(args.length==2)
-        {
+         if (args.length == 1) {
+            port = Integer.parseInt(args[0]);
+        } else if (args.length == 2) {
+            ip = args[0];
             port = Integer.parseInt(args[1]);
         }
-        else if(args.length==3)
-        {
-            ip = args[1];
-            port = Integer.parseInt(args[2]);
-        }
+
+        System.out.println("IP address is set to : " + ip);
+
+        System.out.println("Port is set to : " + port);
 
         Socket clientSocket = new Socket(ip, port);
         OutputStream outToServer = clientSocket.getOutputStream();

@@ -10,9 +10,9 @@ public class Server {
 
         System.out.println("Welcome to the Chat Application\nYou are the Server");
 
-        if(args.length==2)
+        if(args.length==1)
         {
-            port = Integer.parseInt(args[1]);
+            port = Integer.parseInt(args[0]);
         }            
             
         System.out.println("Port is set to : "+port);
